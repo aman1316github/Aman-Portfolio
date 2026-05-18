@@ -165,8 +165,7 @@ function App() {
         <section id="work" className="mt-24 scroll-mt-28">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-[#2d2d2b]/50">Work Experience</p>
-              <h2 className="mt-3 text-3xl font-semibold text-[#2d2d2b]">Selected timeline</h2>
+              <p className="text-xl uppercase tracking-[0.3em] text-[#2d2d2b]/50">Work Experience</p>
             </div>
           </div>
 
@@ -174,7 +173,7 @@ function App() {
             <div className="rounded-[32px] border border-white/10 bg-surface/85 p-10 shadow-soft">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold text-[#2d2d2b]">Full Stack Developer at Codeashion</h3>
+                  <h3 className="text-xl font-semibold text-[#2d2d2b]">Full Stack Developer Intern at Codeashion</h3>
                   <p className="mt-1 text-sm text-[#2d2d2b]/50">Jan 2026 – April 2026</p>
                 </div>
               </div>
@@ -190,8 +189,7 @@ function App() {
         <section id="projects" className="mt-24 scroll-mt-28">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-[#2d2d2b]/50">Projects</p>
-              <h2 className="mt-3 text-3xl font-semibold text-[#2d2d2b]">Selected projects</h2>
+              <p className="text-xl uppercase tracking-[0.3em] text-[#2d2d2b]/50">Projects</p>
             </div>
           </div>
 
@@ -204,7 +202,7 @@ function App() {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <h3 className="text-xl font-semibold text-[#2d2d2b]">Employee Directory</h3>
-                  <p className="mt-4 text-[#2d2d2b]/70">A secure internal directory built with React and ASP.NET Core that supports advanced filtering, role-based access control, and an intuitive admin experience.</p>
+                  <p className="mt-4 text-[#2d2d2b]/70">A secure internal directory built with React that supports advanced filtering, role-based access control, and an intuitive admin experience.</p>
                 </div>
                 <div className="flex gap-3">
                   <a
