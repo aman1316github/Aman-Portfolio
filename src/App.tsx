@@ -191,7 +191,7 @@ function App() {
             <div className="rounded-[32px] border border-white/10 bg-surface/85 p-10 shadow-soft">
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold text-[#2d2d2b]">Full Stack Developer Intern at Car Dekho/h3>
+                  <h3 className="text-xl font-semibold text-[#2d2d2b]">Full Stack Developer Intern at Car Dekho</h3>
                   <p className="mt-1 text-sm text-[#2d2d2b]/50">May 2026 – Current</p>
                 </div>
               </div>
