@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion'
 
-const handleWhatsAppSubmit = (e) => {
+const handleWhatsAppSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 
-  const form = e.target;
+  const form = e.currentTarget;
 
-  const name = form.name.value;
-  const email = form.email.value;
-  const message = form.message.value;
+  const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+  const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+  const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
 
-  const phoneNumber = "917340071316"; 
+  const phoneNumber = "919999999999"; // replace with your WhatsApp number
 
   const whatsappMessage = `
 Hello, my name is ${name}
@@ -18,7 +18,7 @@ Email: ${email}
 
 Message:
 ${message}
-  `;
+`;
 
   const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     whatsappMessage
