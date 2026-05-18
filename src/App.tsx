@@ -128,7 +128,7 @@ function App() {
         <section className="mt-16 rounded-[32px] border border-white/10 bg-surface/85 p-10 shadow-soft">
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-[#2d2d2b]/50">About</p>
+              <p className="text-2xl font-bold uppercase tracking-[0.3em] text-[#2d2d2b]/50">About</p>
               <h2 className="mt-3 text-3xl font-semibold text-[#2d2d2b]">A human-centered approach to engineering.</h2>
             </div>
             <p className="text-[#2d2d2b]/70">
@@ -165,7 +165,7 @@ function App() {
         <section id="work" className="mt-24 scroll-mt-28">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-xl uppercase tracking-[0.3em] text-[#2d2d2b]/50">Work Experience</p>
+              <p className="text-2xl font-bold uppercase tracking-[0.3em] text-[#2d2d2b]/50">Work Experience</p>
             </div>
           </div>
 
@@ -184,12 +184,33 @@ function App() {
               </ul>
             </div>
           </div>
+       
+
+
+          <div className="mt-12 space-y-6">
+            <div className="rounded-[32px] border border-white/10 bg-surface/85 p-10 shadow-soft">
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-[#2d2d2b]">Full Stack Developer Intern at Car Dekho/h3>
+                  <p className="mt-1 text-sm text-[#2d2d2b]/50">May 2026 – Current</p>
+                </div>
+              </div>
+              <ul className="mt-6 list-disc space-y-3 pl-5 text-[#2d2d2b]/70">
+                <li>Learned and implemented REST API development, API integration, and backend fundamentals in real-world projects.</li>
+                <li>Strengthened understanding of core web development fundamentals including authentication, routing, CRUD operations</li>
+
+              </ul>
+            </div>
+          </div>
         </section>
+        
+
+        
 
         <section id="projects" className="mt-24 scroll-mt-28">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <p className="text-xl uppercase tracking-[0.3em] text-[#2d2d2b]/50">Projects</p>
+              <p className="text-2xl font-bold uppercase tracking-[0.3em] text-[#2d2d2b]/50">Projects</p>
             </div>
           </div>
 
@@ -201,7 +222,7 @@ function App() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-[#2d2d2b]">Employee Directory</h3>
+                  <h3 className="text-2xl font-bold font-semibold text-[#2d2d2b]">Employee Directory</h3>
                   <p className="mt-4 text-[#2d2d2b]/70">A secure internal directory built with React that supports advanced filtering, role-based access control, and an intuitive admin experience.</p>
                 </div>
                 <div className="flex gap-3">
@@ -238,7 +259,7 @@ function App() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-[#2d2d2b]">Cricpulse Cricket Live</h3>
+                  <h3 className="text-2xl font-bold font-semibold text-[#2d2d2b]">Cricpulse Cricket Live</h3>
                   <p className="mt-4 text-[#2d2d2b]/70">A real-time MERN stack platform deployed on AWS Cloud, delivering live scores, player stats, and match analytics with fast socket updates and responsive mobile layouts.</p>
                 </div>
                 <div className="flex gap-3">
@@ -273,7 +294,7 @@ function App() {
 
         <section className="mt-24 grid gap-8 lg:grid-cols-[1.3fr_0.9fr]">
           <div className="rounded-[32px] border border-white/10 bg-surface/80 p-8 shadow-soft">
-            <p className="text-sm uppercase tracking-[0.3em] text-[#2d2d2b]/50">Education</p>
+            <p className="text-2xl font-bold uppercase tracking-[0.3em] text-[#2d2d2b]/50">Education</p>
             <div className="mt-6 space-y-6 text-[#2d2d2b]/70">
               <div>
                 <h3 className="font-semibold text-[#2d2d2b]">Master of Computer Applications (MCA)</h3>
@@ -286,7 +307,7 @@ function App() {
             </div>
           </div>
           <div className="rounded-[32px] border border-white/10 bg-surface/80 p-8 shadow-soft">
-            <p className="text-sm uppercase tracking-[0.3em] text-[#2d2d2b]/50">Certifications</p>
+            <p className="text-2xl font-bold uppercase tracking-[0.3em] text-[#2d2d2b]/50">Certifications</p>
             <ul className="mt-6 space-y-4 text-black">
               <li>Full Stack Development — CollegeDekho</li>
               <li>HackerRank DSA — Intermediate & Basic</li>
@@ -297,7 +318,7 @@ function App() {
         <section id="contact" className="mt-24 scroll-mt-28 rounded-[32px] border border-white/10 bg-surface/85 p-10 shadow-soft">
           <div className="grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-[#2d2d2b]/50">Contact</p>
+              <p className="text-2xl font-bold uppercase tracking-[0.3em] text-[#2d2d2b]/50">Contact</p>
               <h2 className="mt-3 text-3xl font-semibold text-[#2d2d2b]">Let’s build something meaningful.</h2>
               <div className="mt-5 rounded-3xl border border-white/10 bg-white/5 p-6 text-sm text-[#2d2d2b]/80">
                 <p>Aman Choudhary</p>
