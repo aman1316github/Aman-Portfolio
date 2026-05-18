@@ -1,5 +1,32 @@
 import { motion } from 'framer-motion'
 
+const handleWhatsAppSubmit = (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+
+  const name = form.name.value;
+  const email = form.email.value;
+  const message = form.message.value;
+
+  const phoneNumber = "917340071316"; 
+
+  const whatsappMessage = `
+Hello, my name is ${name}
+
+Email: ${email}
+
+Message:
+${message}
+  `;
+
+  const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
+
+  window.open(whatsappURL, "_blank");
+};
+
 const navItems = [
   { label: 'Work', href: '#work' },
   { label: 'Projects', href: '#projects' },
@@ -28,7 +55,7 @@ const techGroups = [
 function App() {
   return (
     <div className="min-h-screen bg-background text-[#2d2d2b]">
-      <div className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-surface/95 backdrop-blur-xl">
+      <div className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-surface/50 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-8 py-5">
           <div className="font-semibold tracking-[0.22em] text-sm uppercase text-[#2d2d2b]/70">Aman Choudhary</div>
           <nav className="hidden items-center gap-8 md:flex">
@@ -285,12 +312,12 @@ function App() {
                 <p>Email: <a href="mailto:asrawag1316@gmail.com" className="text-accent hover:text-secondary">asrawag1316@gmail.com</a></p>
               </div>
             </div>
-            <form className="space-y-5">
+            <form onSubmit={handleWhatsAppSubmit} className="space-y-5">
               <div className="grid gap-4 sm:grid-cols-2">
-                <input type="text" placeholder="Name" className="w-full rounded-3xl border border-white/10 bg-black/20 p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
-                <input type="email" placeholder="Email" className="w-full rounded-3xl border border-white/10 bg-black/20 p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
+                <input type="text" name="name" placeholder="Name" className="w-full rounded-3xl border border-white/10 bg-black/20 p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
+                <input type="email"   name="email" placeholder="Email" className="w-full rounded-3xl border border-white/10 bg-black/20 p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
               </div>
-              <textarea rows={5} placeholder="Message" className="w-full rounded-3xl border border-white/10 bg-black/20 p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
+              <textarea rows={5} name="message" placeholder="Message" className="w-full rounded-3xl border border-white/10 bg-black/20 p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
               <button type="submit" className="inline-flex items-center rounded-full bg-background px-6 py-3 text-sm font-semibold text-black transition duration-300 hover:bg-secondary hover:shadow-[0_0_18px_10px_rgba(255,205,178,0.22)]">
                 Send Message
               </button>

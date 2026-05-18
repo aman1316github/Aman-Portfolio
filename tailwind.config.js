@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        surface: '#ff6600',
+        surface: '#986f4cdb',
         background: '#f4f4f0',
         accent: '#000000',
         secondary: '#2d2d2b',
