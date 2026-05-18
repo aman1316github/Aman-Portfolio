@@ -117,7 +117,7 @@ function App() {
             <div className="absolute inset-0 bg-grain opacity-30" aria-hidden="true" />
             <div className="relative overflow-hidden rounded-[30px] bg-[#111827] ">
               <img
-                src="/Mine image.jpeg"
+                src="/desktop image.avif"
                 alt="Aman Choudhary"
                 className="h-[400px] w-full object-cover object-center brightness-90 mix-blend-screen"
               />
