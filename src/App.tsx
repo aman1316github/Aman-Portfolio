@@ -9,7 +9,7 @@ const handleWhatsAppSubmit = (e: React.FormEvent<HTMLFormElement>) => {
   const email = (form.elements.namedItem("email") as HTMLInputElement).value;
   const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
 
-  const phoneNumber = "919999999999"; // replace with your WhatsApp number
+  const phoneNumber = "917340071316"; // replace with your WhatsApp number
 
   const whatsappMessage = `
 Hello, my name is ${name}
@@ -268,7 +268,7 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Cricpulse Cricket Live GitHub repository"
-                    className="rounded-full border border-white/10 bg-white/5 p-3 text-[#2d2d2b] transition hover:border-accent hover:text-accent hover:shadow-[0_0_10px_4px_rgba(255,205,178,0.12)]"
+                    className="rounded-full border border-white/10 bg-white/5 p-3 text-black transition hover:border-accent hover:text-accent hover:shadow-[0_0_10px_4px_rgba(255,205,178,0.12)]"
                   >
                     <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden="true">
                       <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.438 9.8 8.205 11.385.6.113.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.235 1.84 1.235 1.07 1.835 2.805 1.305 3.49.998.108-.775.42-1.305.762-1.605-2.665-.305-5.466-1.335-5.466-5.93 0-1.31.47-2.38 1.235-3.22-.125-.303-.535-1.523.115-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.4 3-.405 1.02.005 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.655 1.653.245 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.103.81 2.222 0 1.605-.015 2.9-.015 3.295 0 .32.21.695.825.575C20.565 21.795 24 17.305 24 12 24 5.37 18.63 0 12 0z" />
@@ -279,7 +279,7 @@ function App() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Cricpulse Cricket Live site"
-                    className="rounded-full border border-white/10 bg-white/5 p-3 text-[#2d2d2b] transition hover:border-accent hover:text-accent hover:shadow-[0_0_10px_4px_rgba(255,205,178,0.12)]"
+                    className="rounded-full border border-white/10 bg-white/5 p-3 text-black transition hover:border-accent hover:text-accent hover:shadow-[0_0_10px_4px_rgba(255,205,178,0.12)]"
                   >
                     <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M5 12h14" />
@@ -333,10 +333,10 @@ function App() {
             </div>
             <form onSubmit={handleWhatsAppSubmit} className="space-y-5">
               <div className="grid gap-4 sm:grid-cols-2">
-                <input type="text" name="name" placeholder="Name" className="w-full rounded-3xl border border-white/10 bg-black/20 p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
-                <input type="email"   name="email" placeholder="Email" className="w-full rounded-3xl border border-white/10 bg-black/20 p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
+                <input type="text" name="name" placeholder="Name" className="w-full rounded-3xl border border-white/10 bg-white p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
+                <input type="email"   name="email" placeholder="Email" className="w-full rounded-3xl border border-white/10 bg-white p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
               </div>
-              <textarea rows={5} name="message" placeholder="Message" className="w-full rounded-3xl border border-white/10 bg-black/20 p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
+              <textarea rows={5} name="message" placeholder="Message" className="w-full rounded-3xl border border-white/10 bg-white p-4 text-[#2d2d2b] outline-none transition focus:border-accent focus:ring-2 focus:ring-accent/20" />
               <button type="submit" className="inline-flex items-center rounded-full bg-background px-6 py-3 text-sm font-semibold text-black transition duration-300 hover:bg-secondary hover:shadow-[0_0_18px_10px_rgba(255,205,178,0.22)]">
                 Send Message
               </button>
